@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hangman</h1>
+      <button class="start">Start</button>
+    </div>
+    <div class="game-section">
+      <div class="word-area">
+        <h2 class="blanks">_ _ _ _ _ _ _</h2>
+      </div>
+      <div class="side-panel">
+        <ul class="wins-and-losses">
+          <li>Wins: <span id="wins"></span></li>
+          <li>Losses: <span id="losses"></span></li>
+        </ul>
+        <button class="reset">Reset</button>
+        <div class="timer">
+          <h1 id="seconds-remaining">0</h1>
+          <h2>Seconds Remaining</h2>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
