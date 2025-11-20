@@ -28,7 +28,7 @@ var letters;
 var secondsLeft = 0;
 var difficulty = 'normal';
 
-// TODO: create difficulty function
+// TODO: create difficulty function ✅
 function difficultySelection() {
   hardEl.addEventListener('click', function () {
     difficulty = 'hard';
@@ -74,7 +74,7 @@ function addWinLoss() {
   lossesEl.textContent = losses;
 }
 
-// TODO: reset the timer to 0
+// TODO: reset the timer to 0 ✅
 // win the game when I have guessed all the letters in the word.
 // lose the game when the timer runs out before I have guessed all the letters.
 // When a user wins or loses a game, a message should appear and the timer should stop.
@@ -87,12 +87,15 @@ function timer() {
 
     if (blanks.join('') === letters.join('')) {
       clearInterval(timerInterval);
-      blanksEl.textContent = 'YOU WIN';
+      blanksEl.textContent = 'YOU WIN!';
       wins++;
       //   re-enables the start button
       startButtonEl.disabled = false;
     } else if (secondsLeft === 0) {
       clearInterval(timerInterval);
+      //   Forces white space on CSS to add a line break
+      blanksEl.style.whiteSpace = 'pre-line';
+      blanksEl.textContent = 'YOU LOSE! \nAnswer: ' + chosenWord;
       losses++;
       startButtonEl.disabled = false;
     }

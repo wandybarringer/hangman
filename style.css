@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  border: 2px solid black;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.start {
+  width: 100px;
+  height: 50px;
+}
+
+.game-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.word-area {
+  border: 2px solid black;
+  min-height: 50vh;
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blanks {
+  font-size: 4rem;
+}
+
+.side-panel {
+  border: 2px solid black;
+  min-height: 50vh;
+  width: 30vw;
+  padding: 15px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score h2 {
+  margin: 10px;
+}
+
+.reset {
+  align-self: center;
+  width: 50%;
+  height: 50px;
+}
+
+.timer {
+  border: 2px solid black;
+  padding: 55px;
+}
+
+#seconds-remaining {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.timer h2 {
+  text-align: center;
+}
+
+.difficulty-panel {
+  margin-top: 10px;
+}
+
+.difficulty-panel h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.difficulty-panel button {
+  height: 50px;
+  width: 30%;
+}
+
+.diff-buttons {
+  display: flex;
+  justify-content: space-around;
+}

@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="header">
-      <h1>Hangman</h1>
+      <h1>Pokemon Hangman</h1>
       <button class="start">Start</button>
     </div>
     <div class="game-section">
@@ -16,21 +16,25 @@
         <h2 class="blanks">_ _ _ _ _ _ _</h2>
       </div>
       <div class="side-panel">
-        <ul class="wins-and-losses">
-          <li>Wins: <span id="wins"></span></li>
-          <li>Losses: <span id="losses"></span></li>
-        </ul>
-        <button class="reset">Reset</button>
+        <div class="score-container">
+          <div class="score">
+            <h2>Wins: <span id="wins"></span></h2>
+            <h2>Losses: <span id="losses"></span></h2>
+          </div>
+          <button class="reset">Reset Score</button>
+        </div>
+
         <div class="timer">
           <h1 id="seconds-remaining">0</h1>
           <h2>Seconds Remaining</h2>
         </div>
         <div class="difficulty-panel">
           <h2>Difficulty</h2>
-
-          <button id="hard">Hard (5 seconds)</button>
-          <button id="normal">Normal (10 second)</button>
-          <button id="easy">Easy (20 second)</button>
+          <div class="diff-buttons">
+            <button id="hard">Hard (5 sec)</button>
+            <button id="normal">Normal (10 sec)</button>
+            <button id="easy">Easy (20 sec)</button>
+          </div>
         </div>
       </div>
     </div>
